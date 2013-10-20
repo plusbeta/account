@@ -1,0 +1,418 @@
+/* CSS Document */
+@charset "utf-8";
+
+body{
+	font: 11px "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+
+}
+h2{
+	font-size:14px;
+
+}
+h3{
+	font-size:14px;
+	padding-right:5px;
+
+}
+/* container */
+#container{
+
+}
+/* header */
+#header{
+	padding:10px;
+	position:relative;
+}
+#user_box{
+	position:absolute;
+	top:10px;
+	left:220px;
+}
+/*globalnav*/
+
+#globalnav {
+	position:relative;
+	float:left;
+	width:100%;
+	padding:0 0 1.75em 1em;
+	margin:0;
+	list-style:none;
+	line-height:1em;
+}
+
+#globalnav LI {
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#globalnav A {
+	display:block;
+	color:#444;
+	text-decoration:none;
+	font-weight:bold;
+	background:#f4f1e6;
+	margin:0;
+	border-left:1px solid #fff;
+	border-top:1px solid #ddd;
+	border-right:1px solid #bab9b7;
+	padding:0.4em 1em;
+}
+
+#globalnav A:hover,
+#globalnav A:active,
+#globalnav A.here:link,
+#globalnav A.here:visited {
+	background:#a4a197;
+}
+
+#globalnav A.here:link,
+#globalnav A.here:visited {
+	position:relative;
+	z-index:102;
+}
+
+/*subnav*/
+
+#globalnav UL {
+	position:absolute;
+	left:0;
+	top:1.8em;
+	float:left;
+	background:#a4a197;
+	width:100%;
+	margin:0;
+	/*padding:1.2em 0.25em 0.25em 1em;*/
+	list-style:none;
+	border-top:1px solid #fff;
+	height:2px;
+}
+
+#globalnav UL LI {
+	float:left;
+	display:block;
+	margin-top:1px;
+	/*padding:0 1em;*/
+}
+
+#globalnav UL A {
+	background:#a4a197;
+	color:#fff;
+	display:inline;
+	margin:0;
+	padding:0 1em;
+	border:0
+}
+
+#globalnav UL A:hover,
+#globalnav UL A:active,
+#globalnav UL A.here:link,
+#globalnav UL A.here:visited {
+	color:#444;
+}
+
+
+/* login */
+.login_belt{
+	background:#a4a197;
+	padding:0.5em 0.5em 0.5em 2em;
+	color:#fff;
+	font-weight:bold;
+}
+#login_window{
+	padding-top:50px;
+}
+#login_field{
+	margin:0 auto;
+	padding:10px;
+	width:250px;
+}
+.login_btn{
+	padding-top:10px;
+	text-align:center;
+}
+.text{
+	display:inline;
+}
+/* common head */
+#common_head{
+	width:1000px;
+	padding:5px 15px;
+}
+#comm_menu{
+	border-bottom:1px solid #000;
+	width:880px;
+}
+#comm_menu th,
+#comm_menu td{
+	padding:2px 3px;
+	border-top:1px solid #000;
+}
+/* main */
+#main{
+	float:left;
+	width:1000px;
+	min-height:300px;
+	padding:20px 15px;
+
+}
+#main:after{
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+#left_pane{
+	float:left;
+
+}
+#right_pane{
+	float:left;
+
+}
+.icon{
+	float:left;
+	padding:3px 5px 0 0;
+}
+
+/* search_box */
+#search_box ul{
+	list-style:none;
+}
+
+#search_box ul li{
+	float:left;
+	padding:3px 15px 3px 0;
+}
+/* footer */
+#footer{
+	float:left;
+	width:100%;
+	border-top:1px solid #AAAAAA;
+	padding-top:10px;
+}
+#footer address{
+
+	position:relative;		/* == センター寄せのときは 上3行を削除して== */
+	text-align:center;      /* == この2行をイキにします == */
+	width:900px;
+}
+
+/***************************************
+ * 台帳                                *
+ ***************************************/
+#account_list{
+	border:1px solid #000;
+	width:900px;
+}
+#account_list th,
+#account_list td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#account_list th{
+	background:#ECECEC;
+}
+#account_list th.date{
+	width:65px;
+}
+#account_list th.status{
+	width:105px;
+}
+#account_list th.member{
+	width:60px;
+}
+#account_list th.client{
+	width:170px;
+}
+#account_list th.proj{
+	width:233px;
+}
+/***************************************
+ * 詳細                               *
+ ***************************************/
+ #page_title{
+ 	font-weight:bold;
+ 	font-size:16px;
+ }
+#base table{
+	border:1px solid #000;
+	width:800px;
+}
+#base table th,
+#base table td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#base table th{
+	background:#ECECEC;
+}
+#item table{
+	border:1px solid #000;
+	width:800px;
+}
+#item table th,
+#item table td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#item table th{
+	background:#ECECEC;
+}
+#other{
+	/*position:relative;*/
+}
+#other table{
+	border:1px solid #000;
+	width:800px;
+}
+#other table th,
+#other table td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#other table th{
+	background:#ECECEC;
+}
+#local_menu{
+	position:absolute;
+	top:207px;
+	left:820px;
+}
+.menu_block{
+	border:1px solid;
+	width:75px;
+}
+.menu_block h3{
+	background:#ECECEC;
+	width:70px;
+	border-bottom:1px solid;
+	padding:5px 0 5px 5px;
+
+}
+.menu_block ul{
+	list-style:none;
+	padding:5px 0;
+}
+.menu_block ul li{
+	padding:3px 0 3px 10px ;
+}
+/***************************************
+ * 定型文ウィンドウ                    *
+ ***************************************/
+#dispSentence{
+	position:absolute;
+	padding:10px 20px;
+	border:2px solid;
+	background:#FFF;
+	top:0;
+	left:0;
+	visibility:hidden;
+}
+#dispSentence ul li{
+	padding:2px 0;
+	cursor:hand;
+}
+
+/* OTHER */
+.number{
+	text-align:right;
+	width:80px;
+}
+
+/***************************************
+ * クライアント一覧                    *
+ ***************************************/
+#client_list{
+	border:1px solid #000;
+	width:900px;
+}
+#client_list th,
+#client_list td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#client_list th{
+	background:#ECECEC;
+}
+#client_list th.date{
+	width:80px;
+}
+#client_list th.id{
+	width:10px;
+}
+#client_list th.member{
+	width:80px;
+}
+#client_list th.client{
+}
+#client_list th.cnt{
+	width:60px;
+
+}
+#client_list th.code{
+	width:80px;
+}
+.alCenter{
+	text-align:center;
+}
+/***************************************
+ * 振込先口座一覧                      *
+ ***************************************/
+#bank_list{
+	border:1px solid #000;
+	width:450px;
+}
+#bank_list th,
+#bank_list td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#bank_list th{
+	background:#ECECEC;
+}
+#bank_list th.name{
+	width:200px;
+}
+#bank_list th.kind{
+	width:55px;
+}
+#bank_list th.number{
+	width:55px;
+}
+#bank_list th.number_w{
+
+}
+/***************************************
+ * 担当者一覧                          *
+ ***************************************/
+#member_list{
+	border:1px solid #000;
+	width:450px;
+}
+#member_list th,
+#member_list td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#member_list th{
+	background:#ECECEC;
+}
+/***************************************
+ * 担当者詳細                          *
+ ***************************************/
+
+#member_list_v {
+	border:1px solid #000;
+	width:400px;
+}
+#member_list_v th,
+#member_list_v td{
+	padding:2px 3px;
+	border:1px solid #000;
+}
+#member_list_v th{
+	background:#ECECEC;
+}

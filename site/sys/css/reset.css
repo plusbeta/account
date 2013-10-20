@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*===========================================================================
+   reset.css 
+   各要素のスタイルリセット
+  =========================================================================== */
+/***************************************
+ * margin, padding                     *
+ ***************************************/
+html, body, div, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, address,
+ul, ol, li, dl, dt, dd,
+table, th, td, form, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+/***************************************
+ * scrollbar                           *
+ ***************************************/
+html {
+	overflow: scroll;
+	overflow: -moz-scrollbars-vertical;
+	overflow-x: scroll;
+}
+
+/***************************************
+ * table border                        *
+ ***************************************/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***************************************
+ * image border                        *
+ ***************************************/
+img {
+	border: 0;
+}
+
+/***************************************
+ * clearfix (all‐purpose)             *
+ ***************************************/
+.clearfix:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+.clearfix {
+	height:1%;  /* for IE */
+}
